@@ -1,3 +1,5 @@
+window.scrollTo(0,0)
+
 const SVG_PATH_SELECTOR = "#matter-path"
 const SVG_WIDTH_IN_PX = 50
 //50
