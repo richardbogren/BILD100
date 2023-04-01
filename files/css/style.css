@@ -1,0 +1,443 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100vw;
+    font-family: "Inter", sans-serif;
+    overflow: scroll;
+    opacity: 0;
+
+}
+
+svg {
+    display: none
+}
+
+h1 {
+    font-weight: 400;
+    width: 100%;
+    font-size: 3vw;
+    margin-bottom: 1vw;
+}
+
+h2 {
+    font-size: 1.5vw;
+    font-weight: 400;
+    margin-bottom: 0px !important;
+    margin-top: 1vh;
+}
+
+.hero_h1 {
+    font-size: 8vw;
+}
+
+div {
+    /*        outline: 1px solid black;*/
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    min-height: 825px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    transition: all 500ms;
+}
+
+#intro_wrapper h1 {
+    width: 100vw;
+    text-align: center;
+}
+
+.machine_ingress_container {
+    width: 60vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.ingress_box {
+    width: 100%;
+    height: 100%;
+    margin: 0 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2vw;
+}
+
+
+.picSaved_wrapper,
+.intro_sides_wrapper {
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+.intro_sides_wrapper {
+    top: 0vw;
+}
+
+
+.picSaved_wrapper h1,
+.intro_sides_wrapper h1,
+.posterSaved_wrapper h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.posterSaved_wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 350vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_h2 {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    font-size: 4vw;
+    position: absolute;
+    top: -10vh;
+}
+
+.hero_firstSpan {
+    margin-right: 1vw;
+}
+
+.hero .posterSaved_null {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+}
+
+
+.restart_container {
+    width: 100vw;
+    height: 20vh;
+    position: absolute;
+    top: 0;
+}
+
+#scrollTo {
+    padding-bottom: 10vh;
+    position: relative;
+}
+
+.intro_container {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro_container h1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right_container {
+    position: absolute;
+    z-index: 3;
+    right: 2.5vw;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.left_examples_container {
+    position: absolute;
+    z-index: 3;
+    left: 2.5vw;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.left_examples_container h1 {
+    transform: rotate(180deg)
+}
+
+.bottom_container {
+    width: 100%;
+    height: 5%;
+    position: absolute;
+    bottom: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+button {
+    text-decoration: none;
+    background: white;
+    font-family: "Inter", sans-serif;
+    margin: 0 2vw;
+    width: 10vw;
+    height: 2vw;
+    border: none;
+    outline: 2px solid black;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#hide {
+    outline-color: #F2C126
+}
+
+#delete {
+    outline-color: #00AE5D
+}
+
+#duplicate {
+    outline-color: #CF013F
+}
+
+#random {
+    outline-color: #007BC7
+}
+
+#hide:hover {
+    cursor: pointer;
+    color: white;
+    background: #F2C126
+}
+
+#delete:hover {
+    cursor: pointer;
+    color: white;
+    background: #00AE5D
+}
+
+#duplicate:hover {
+    cursor: pointer;
+    color: white;
+    background: #CF013F
+}
+
+#random:hover {
+    cursor: pointer;
+    color: white;
+    background: #007BC7
+}
+
+.tools_container {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.tools_container h1 {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second_toolbars {
+    top: 11%
+}
+
+.tools_container h1 span {
+    animation-name: upDown;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin: 0 2vw;
+}
+
+.tutorial {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.tutorial span {
+    margin: -0.33vw !important;
+}
+
+.tutorial span:first-child {
+    margin-left: .25vw !important;
+}
+
+.tutorial span:last-child {
+    margin-right: .25vw !important;
+}
+
+.poster_start {
+    animation: none;
+}
+
+.picSave_container {
+    width: 200%;
+    height: 50%;
+    transform: rotate(-90deg);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.gallery_container {
+    height: 25%;
+}
+
+.picSave {
+    margin: 0 2vw;
+}
+
+.restart_button {
+    margin: 0 2vw;
+}
+
+.finalDownload {
+    margin: 0 2vw;
+}
+
+
+#picSave span,
+#finalDownload span,
+#tutorial .upDown {
+    animation-name: upDown;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.picSave:hover,
+.machine_start:hover,
+.finalDownload:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#restart_button span {
+    animation-name: upDown;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.restart_button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+.h1_button {
+    font-size: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.poster_start:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+@keyframes upDown {
+    from {
+        transform: translateY(-2vh);
+    }
+
+    to {
+        transform: translateY(2vh);
+    }
+
+}
+
+#matter-container {
+    aspect-ratio: 1 / 1.4142;
+    width: calc(841mm/2);
+    height: calc(1189mm/2);
+    /*    height: calc(1080px*2);*/
+    border: 2px solid black;
+    transform: scale(.25);
+    position: relative;
+    z-index: 1;
+    transform-origin: center center;
+}
+
+
+
+
+#fabric-container {
+    aspect-ratio: 1 / 1.4142;
+    width: calc(841mm/8);
+    height: calc(1189mm/8);
+    outline: 2px solid black;
+    position: relative;
+    transform-origin: bottom center
+}
+
+#fabric-canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.download_poster_container {
+    width: 100vw;
+    height: 10vh;
+    position: absolute;
+    bottom: 13vh;
+
+}
+
+
+.info {
+    position: absolute;
+    z-index: 2;
+    font-size: 5vw;
+}
